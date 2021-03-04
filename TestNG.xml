@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Cx-HelpDesk" annotations="JDK" parallel="true">
+<!--    <test name="Test_Login" enabled="true">-->
+<!--        <classes>-->
+<!--            <class name="testcase.cxHelpDesk.CxHelpDesk_LoginPageTests">-->
+<!--                <methods>-->
+<!--                    <include name="verifyAgentLogin"/>-->
+<!--                    <include name="verifyUserLogin"/>-->
+<!--                    &lt;!&ndash;<include name="verifyAdminLogin"/>&ndash;&gt;-->
+<!--                    <include name="validateLogin"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="Test_Master_Employee" enabled="true">
+        <classes>
+            <class name="testcase.cxHelpDesk.CxHelpDesk_Master_EmployeePageTests">
+                <methods>
+                    <include name="createEmployee"/>
+                    <include name="editEmployee"/>
+                    <include name="deleteEmployee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test_Master_Group" enabled="true">
+        <classes>
+        <class name="testcase.cxHelpDesk.CxHelpDesk_Master_GroupPageTests">
+            <methods>
+                <include name="createGroup"/>
+                <include name="editGroup"/>
+                <include name="deleteGroup"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+
+    <test name="Test_Master_Customer" enabled="true">
+        <classes>
+            <class name="testcase.cxHelpDesk.CxHelpDesk_Master_CustomerPageTests">
+                <methods>
+                    <include name="createCustomer"/>
+                    <include name="editCustomer"/>
+                    <include name="deleteCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test_Master_CustomerUser" enabled="true">
+        <classes>
+            <class name="testcase.cxHelpDesk.CxHelpDesk_Master_CustomerUserPageTests">
+                <methods>
+                    <include name="createCustomerUser"/>
+                    <include name="editCustomerUser"/>
+                    <include name="deleteCustomerUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
